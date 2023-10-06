@@ -1,0 +1,12 @@
+int switchPin = 12;
+int switchState = LOW;
+void setup() {
+  Serial.begin(9600);
+  pinMode(switchPin, INPUT);
+
+}
+
+void loop() {
+  switchState = digitalRead(switchPin);
+
+}
