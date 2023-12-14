@@ -1,0 +1,85 @@
+// Motor connections
+#define enA 10
+#define MotorLeftForward 5
+#define MotorLeftBackward 4
+#define MotorRightForward 6
+#define MotorRightBackward 7
+#define enB 9
+
+void setup() {
+  // Set motor control pins as OUTPUT
+  pinMode(enA, OUTPUT);
+  pinMode(MotorLeftForward, OUTPUT);
+  pinMode(MotorLeftBackward, OUTPUT);
+  pinMode(MotorRightForward, OUTPUT);
+  pinMode(MotorRightBackward, OUTPUT);
+  pinMode(enB, OUTPUT);
+}
+
+void loop() {
+  // Test individual motor control
+  driveMotorA(255); // Full speed forward for motor A
+  delay(2000);
+  stopMotors();
+  delay(1000);
+  driveMotorB(255); // Full speed forward for motor B
+  delay(2000);
+  stopMotors();
+  delay(1000);
+
+  // Test variable speed control
+  driveMotors(200, 150); // Motor A at 200 speed, Motor B at 150 speed
+  delay(2000);
+  stopMotors();
+  delay(1000);
+
+  // Test direction control
+  driveMotorAReverse(150); // Motor A backward at 150 speed
+  delay(2000);
+  stopMotors();
+  delay(1000);
+  driveMotorBReverse(200); // Motor B backward at 200 speed
+  delay(2000);
+  stopMotors();
+  delay(1000);
+}
+
+// Function to drive motor A forward
+void driveMotorA(int speed) {
+  analogWrite(enA, speed);
+  digitalWrite(MotorLeftForward, HIGH);
+  digitalWrite(MotorLeftBackward, LOW);
+}
+
+// Function to drive motor B forward
+void driveMotorB(int speed) {
+  analogWrite(enB, speed);
+  digitalWrite(MotorRightForward, HIGH);
+  digitalWrite(MotorRightBackward, LOW);
+}
+
+// Function to drive both motors forward
+void driveMotors(int speedA, int speedB) {
+  driveMotorA(speedA);
+  driveMotorB(speedB);
+}
+
+// Function to stop both motors
+void stopMotors() {
+  analogWrite(enA, 0);
+  analogWrite(enB, 0);
+}
+
+// Function to drive motor A backward
+void driveMotorAReverse(int speed) {
+  analogWrite(enA, speed);
+  digitalWrite(MotorLeftForward, LOW);
+  digitalWrite(MotorLeftBackward, HIGH);
+}
+
+// Function to drive motor B backward
+void driveMotorBReverse(int speed) {
+  analogWrite(enB, speed);
+  digitalWrite(MotorRightForward, LOW);
+  digitalWrite(MotorRightBackward, HIGH);
+}
