@@ -28,10 +28,12 @@ void loop() {
   delay(1000);
 
   // Test variable speed control
-  driveMotors(200, 150); // Motor A at 200 speed, Motor B at 150 speed
-  delay(2000);
-  stopMotors();
-  delay(1000);
+  for (int i = 0; i < 255; i++)
+  {
+    driveMotors(i,i);
+    delay(10);
+  }
+  
 
   // Test direction control
   driveMotorAReverse(150); // Motor A backward at 150 speed
