@@ -23,9 +23,9 @@ doordat het zwart van het circuit na verloop van tijd minder zwart is of het wit
 
 ### settings
 De robot rijdt stabiel met volgende parameters:  
-power = 50
-cycle time = 2500
-kp = 20
+power = 50,
+cycle time = 2500,
+kp = 20,
 diff = 0.40
 
 ### schakelaar
