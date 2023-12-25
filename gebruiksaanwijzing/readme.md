@@ -19,7 +19,7 @@ calibrate black
 calibrate white  
 
 ### kalibratie
-doordat het zwart van het circuit na verloop van tijd minder zwart is of het wit minder wit is dan in het begin kan men door elke keer voor men de linefollower laat runnen eerst te laten kalibreren verdere problemen vermijden
+doordat het zwart van het circuit na verloop van tijd minder zwart is of het wit minder wit is dan in het begin kan men door elke keer voor men de linefollower laat runnen eerst te laten kalibreren verdere problemen vermijden. Bij het veranderen van parcour is het ook sterk aan te raden om eerst te kalibreren!
 
 ### settings
 De robot rijdt stabiel met volgende parameters:  
