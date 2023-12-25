@@ -29,5 +29,5 @@ je kan nu de poc's in de arduino uploaden om te testen of alles correct is aange
 ### stap 9
 eenmaal alles getest is en correct aangesloten upload je het hoofdprogramma in de arduino
 
-### stap 9
+### stap 10
 je linefollower is nu klaar voor gebruik
