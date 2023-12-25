@@ -1,11 +1,11 @@
 # Gebruiksaanwijzing
 
-### opladen / vervangen batterijen
-uitleg over het opladen of vervangen van de batterijen
+### vervangen batterijen
+Wanneer de batterijen plat zijn moeten ze handmatig worden vervangen.
 
 ### draadloze communicatie
 #### verbinding maken
-uitleg over het verbinden van de robot met laptop / smartphone
+Dit is voorzien maar jammer genoeg werkte de module niet bij mij. Indien de module werkt moet u eerst verbinding maken via bluetooth met "HC-06", indien u hem niet vindt kan het zijn dat u uw bluetooth instellingen moet aanpassen naar "geavanceerd". dan hebt u een bluetooth terminal nodig op het device waar u commando's van wilt versturen (laptop, smartphone...). Eenmaal u in de terminal verbonden bent bent u klaar om commando's te versturen!
 
 #### commando's
 debug [on/off]  
@@ -14,17 +14,19 @@ stop
 set cycle [µs]  
 set power [0..255]  
 set diff [0..1]  
-set kp [0..]  
-set ki [0..]  
-set kd [0..]  
+set kp [0..]   
 calibrate black  
 calibrate white  
 
 ### kalibratie
-uitleg kalibratie  
+doordat het zwart van het circuit na verloop van tijd minder zwart is of het wit minder wit is dan in het begin kan men door elke keer voor men de linefollower laat runnen eerst te laten kalibreren verdere problemen vermijden
 
 ### settings
 De robot rijdt stabiel met volgende parameters:  
+power = 50
+cycle time = 2500
+kp = 20
+diff = 0.40
 
-### start/stop button
-uitleg locatie + werking start/stop button
+### schakelaar
+achteraan is er een schakelaar voorzien waarmee we de linefollowr handmatig kunnen stoppen, bij het terug inschakelen moet er een commando "run" verstuurd worden voordat de linefollower terug begint te rijden.
