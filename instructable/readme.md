@@ -21,9 +21,12 @@ monteer de wielen aan de motoren met behulp van een glue gun
 verbind de onderdelen met de jumper draad zoals getekend op het elektrische schema, bij de onderdelen waar er geen pinnen zijn als ingang/uitgang soldeer je de draad aan de ingang/uitgang. De 2 weerstanden moeten ook gesoldeerd worden.
 
 ### stap 7
-je kan nu de poc's in de arduino uploaden om te testen of alles correct is aangesloten
+steek 6 AA batterijen in de batterijhouder
 
 ### stap 8
+je kan nu de poc's in de arduino uploaden om te testen of alles correct is aangesloten, let op dat de schakelaar aan staat!
+
+### stap 9
 eenmaal alles getest is en correct aangesloten upload je het hoofdprogramma in de arduino
 
 ### stap 9
